@@ -26,7 +26,7 @@ public class LoginController {
 
     @GetMapping("/inicio")
     public String inicio(Model model) {
-        return "inicio"; // Página de inicio de sesión
+        return "inicio";
     }
 
     @PostMapping("/autenticar")
