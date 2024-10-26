@@ -11,7 +11,7 @@ import pe.edu.cibertec.dto.LoginResponseDTO;
 
 import java.util.List;
 
-@FeignClient(name = "autenticacion", url = "http://proyecto-final-dawii.azurewebsites.net/autenticacion", configuration = FeignClientConfig.class)
+@FeignClient(name = "autenticacion", url = "https://proyecto-final-dawii.azurewebsites.net/autenticacion", configuration = FeignClientConfig.class)
 public interface AutenticacionClient {
 
     @PostMapping("/autenticar")
