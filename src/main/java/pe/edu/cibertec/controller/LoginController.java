@@ -34,7 +34,7 @@ public class LoginController {
                              @RequestParam("password") String password,
                              Model model) {
 
-        // Verifica si los campos están vacíos antes de llamar al servicio de autenticación
+        // Verificar si los campos están vacíos antes de llamar al servicio de autenticación
         if (codigoAlumno.trim().isEmpty() || password.trim().isEmpty()) {
             model.addAttribute("error", "Datos Ingresados incorrectamente.");
             return "inicio";
